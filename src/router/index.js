@@ -4,6 +4,8 @@ import Login from '../components/Login'
 import Home from '../components/Home'
 import Welcome from '../components/Welcome'
 import UserList from '../components/user/userList'
+import RightList from '../components/power/rightList'
+import Roles from '../components/power/roles'
 Vue.use(VueRouter)
 
   const routes = [
@@ -27,6 +29,14 @@ Vue.use(VueRouter)
         {
           path: '/users',
           component: UserList
+        },
+        {
+          path:'/rights',
+          component: RightList
+        }, 
+        {
+          path: '/roles',
+          component: Roles
         }
       ]
     }
